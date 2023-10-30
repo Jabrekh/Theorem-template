@@ -1,3 +1,4 @@
+\usepackage[most]{tcolorbox}
 \usepackage{amsmath}
 \usepackage{color}
 \usepackage{enumerate}
@@ -54,8 +55,11 @@
 	\end{tabularx}}
 }
 
+\newcounter{x}
+\setcounter{x}{1}
+
 \newenvironment{questionset}{
-	\begin{enumerate}[label={\bfseries قضیه \arabic*}, wide, labelindent=0pt]
+	\begin{enumerate}[label={}, wide, labelindent=0pt]
 	}
 	{
 	\end{enumerate}
